@@ -22,6 +22,11 @@ export class Main {
         return false;
     }
 
+    validateNoIPL(password) {
+        return !password.toLowerCase().includes('ipl');
+    }
+    
+
 
 
 }

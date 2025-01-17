@@ -15,7 +15,7 @@ describe('Password Validation', function () {
     });
 
 
-    
+
     it('should invalidate a password without a special character', function () {
         const password = 'NoSpecial1';
         const output = result.validateSpecialCharacter(password);
@@ -29,6 +29,21 @@ describe('Password Validation', function () {
         const output = result.validateNumber(password);
         expect(output).toBe(false);
     });
+
+
+    it('should invalidate a password containing "IPL" ', function () {
+        const password = 'MyPassIPL1!';
+        const output = result.validateNoIPL(password);
+        expect(output).toBe(false);
+    });
+
+
+    it('should invalidate a password containing "IPL" ', function () {
+        const password = 'MyPassIPL1!';
+        const output = result.validateNoIPL(password);
+        expect(output).toBe(false);
+    });
+    
 
 
 
