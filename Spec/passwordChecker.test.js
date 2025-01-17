@@ -8,5 +8,11 @@ describe('Password Validation', function () {
     });
 
 
+    it('should invalidate a password shorter than 8 characters', function () {
+        const password = 'Short1!';
+        const output = result.validateLength(password);
+        expect(output).toBe(false);
+    });
+
 
 });
