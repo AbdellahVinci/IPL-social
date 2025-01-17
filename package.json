@@ -1,12 +1,38 @@
 {
-  "name": "examen_devops",
-  "version": "1.0.0",
-  "description": "��#\u0000 \u0000I\u0000P\u0000L\u0000-\u0000s\u0000o\u0000c\u0000i\u0000a\u0000l\u0000\r\u0000 \u0000",
-  "main": "index.js",
+  "name": "projet-devops2",
+  "version": "0.0.0",
+  
+  "private": true,
+ 
+
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon app.js",
+  
+    "build": "echo 'No build step defined'"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "better-sqlite3": "^9.4.3",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "express-session": "^1.18.1",
+    "hbs": "~4.0.4",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "multer": "^1.4.5-lts.1",
+    "validator": "^13.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.21.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-hbs": "^1.0.3",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.4",
+    "eslint-plugin-promise": "^6.0.0",
+    "jasmine": "^4.6.0",
+    "nodemon": "^2.0.15"
+  },
+  "type": "commonjs"
 }
