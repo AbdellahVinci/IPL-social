@@ -1,4 +1,4 @@
-export class Main {
+ class Main {
     validateLength(password) {
         return password.length >= 8;
     }
@@ -30,3 +30,5 @@ export class Main {
 
 
 }
+
+module.exports = { Main };

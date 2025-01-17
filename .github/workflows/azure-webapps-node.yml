@@ -26,7 +26,7 @@ env:
   AZURE_WEBAPP_NAME: your-app-name    # Remplacez par le nom de votre application Azure
   AZURE_WEBAPP_PACKAGE_PATH: '.'      # Remplacez par le chemin vers votre projet Node.js si nécessaire
   NODE_VERSION: '20.x'                # Définissez la version de Node.js que vous souhaitez utiliser
-  JASMINE_CONFIG_PATH: 'Spec/Support/jasmine.json'  # Spécifie le chemin du fichier de config Jasmine
+  JASMINE_CONFIG_PATH: 'Spec/Support/jasmine.json'  
 
 permissions:
   contents: read
@@ -47,7 +47,7 @@ jobs:
       run: npm install
 
     - name: Run Jasmine tests
-      run: npm test # Assurez-vous que `npm test` exécute Jasmine (via un script dans package.json)
+      run: npm test 
 
     - name: npm build
       run: npm run build --if-present

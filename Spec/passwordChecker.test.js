@@ -1,4 +1,5 @@
-import { Main } from '../Src/passwordChecker.js';
+const { Main } = require('../Src/passwordChecker.js');
+
 
 describe('Password Validation', function () {
     const result = new Main();
