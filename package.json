@@ -3,13 +3,11 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
-  
   "scripts": {
-  "start": "nodemon app.js",
-  "build": "echo 'No build step defined'",
-  "test": "jasmine --experimental-vm-modules"
-},
-
+    "start": "nodemon app.js",
+    "build": "echo 'No build step defined'",
+    "test": "jasmine"
+  },
   "dependencies": {
     "bcrypt": "^5.1.0",
     "better-sqlite3": "^9.4.3",
