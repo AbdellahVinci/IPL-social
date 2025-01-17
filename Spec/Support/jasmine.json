@@ -1,14 +1,12 @@
 {
-    "spec_dir": "Spec",
+    "spec_dir": "spec",
     "spec_files": [
-        "**/*.test.?(m)js"
+      "**/*[sS]pec.?(m)js",
+      "**/*[tT]est.?(m)js"
     ],
     "helpers": [
-        "helpers/**/*.?(m)js"
+      "helpers/**/*.?(m)js"
     ],
-    "env": { 
-        "stopSpecOnExpectationFailure": false,
-        "random": false
-    },
-    "moduleFileExtensions": ["js", "mjs", "json", "node"]
+    "stopSpecOnExpectationFailure": false,
+    "random": false
   }
