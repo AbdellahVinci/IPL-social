@@ -14,11 +14,23 @@ describe('Password Validation', function () {
         expect(output).toBe(false);
     });
 
+
+    
     it('should invalidate a password without a special character', function () {
         const password = 'NoSpecial1';
         const output = result.validateSpecialCharacter(password);
         expect(output).toBe(false);
     });
+
+
+
+    it('should invalidate a password without a number', function () {
+        const password = 'NoNumber!';
+        const output = result.validateNumber(password);
+        expect(output).toBe(false);
+    });
+
+
 
 
 });
