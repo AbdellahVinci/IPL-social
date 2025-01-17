@@ -1,14 +1,12 @@
 {
   "name": "examen_devops",
   "version": "0.0.0",
-  
   "private": true,
- 
-
+  "type": "module",
   "scripts": {
     "start": "nodemon app.js",
-  
-    "build": "echo 'No build step defined'"
+    "build": "echo 'No build step defined'",
+    "test": "jasmine"
   },
   "dependencies": {
     "bcrypt": "^5.1.0",
@@ -24,15 +22,6 @@
     "validator": "^13.9.0"
   },
   "devDependencies": {
-    "eslint": "^8.21.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-config-standard": "^17.0.0",
-    "eslint-plugin-hbs": "^1.0.3",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-n": "^15.2.4",
-    "eslint-plugin-promise": "^6.0.0",
-    "jasmine": "^4.6.0",
-    "nodemon": "^2.0.15"
-  },
-  "type": "commonjs"
+    "jasmine": "^3.10.0"
+  }
 }
